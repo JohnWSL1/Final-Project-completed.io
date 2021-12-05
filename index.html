@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <meta charset="utf-8" />
+        <title>Page Title</title>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>   
+
+                <div class="nav-link-wrapper">
+                    <a href="goals.html">Goals</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="entertainment.html">entertainment</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="enjoy doing.html">Enjoy</a>
+                </div>    
+            </div>
+
+            <div class="right-side"> 
+                 <div class="brand">
+                    <div>John Segre-Lawrence</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(image/portfolio1.jpeg);"></div>
+                    
+                    <div class="img-text-wrapper"></div>
+                        <div class="logo-wrapper">
+                            <img src="beer.jpeg">
+                    </div>    
+
+                        <div class="subtitle">
+                            This will explain what I like to do in my down time!
+                        </div>    
+                            <div class="portfolio-img-background" style="background-image:url(images/portfolio2.jpeg);"></div>
+                    
+                    <div class="img-text-wrapper"></div>
+                        <div class="logo-wrapper">
+                            <img src="goal.jpeg">
+                        </div>    
+
+                        <div class="subtitle">
+                            I have a goal to achieve financial freedom and better my investments.
+                        </div>    
+
+
+                    <div class="portfolio-img-background" style="background-image:url(images/portfolio3.jpeg);"></div>
+                    
+                    <div class="img-text-wrapper"></div>
+                        <div class="logo-wrapper">
+                            <img src="enjoy doing.jpeg"> 
+                        </div>    
+
+                        <div class="subtitle">
+                            These are what I enjoy doing when I don't have work but want to stay busy!
+                        </div>    
+
+                        <div class="portfolio-img-background" style="background-image:url(images/portfolio4.jpeg);"></div>
+                    
+                    <div class="img-text-wrapper"></div>
+                        <div class="logo-wrapper">
+                            <img src="about me.jpeg">
+                        </div>    
+
+                        <div class="subtitle">
+                            Here is some info about John.
+                        </div>    
+
+                        <div class="portfolio-img-background" style="background-image:url(portfolio5.jpeg);"></div>
+                    
+                    <div class="img-text-wrapper"></div>
+                        <div class="logo-wrapper">
+                            <img src="entertainment.jpeg">
+                        </div>    
+
+                        <div class="subtitle">
+                            Here is what entertains me when I have down time!
+                        </div> 
+                    </div>       
+                    </div>
+            
+
+                
+                    </div>   
+                </div>  
+        </div>
+
+    </div> 
+</body>  
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(porfolioItem => {
+        portfolioItem.addEventlistener('mouseover', () =>{ 
+           console.log(portfolioItem.childNodes[1].classList); 
+        })
+    })
+</script>
+</html>
